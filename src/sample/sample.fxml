@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane id="BorderPane" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TextField  fx:id="text_pwd" promptText="请输入要设置的密码" GridPane.rowIndex="1" />
+      <Label text="请输入要设置的密码：" />
+      <Button fx:id="btn" mnemonicParsing="false" onAction="#action" prefHeight="23.0" prefWidth="160.0" text="加  密" GridPane.rowIndex="5" />
+      <TextField  fx:id="text_pwd_show" GridPane.rowIndex="4" />
+      <Label text="加密结果：" GridPane.rowIndex="3" />
+   </children>
+</GridPane>
